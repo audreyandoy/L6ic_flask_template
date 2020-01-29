@@ -1,0 +1,11 @@
+body {
+  text-align: center;
+  color: red;
+}
+
+#top {
+  width: 100%;
+  height: 30%;
+  background-color: bisque;
+  border: 3px solid burlywood;
+}
