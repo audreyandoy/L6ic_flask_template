@@ -9,7 +9,7 @@ dictionary = {
 
 @app.route('/')
 def home():
-  return flask.render_template('index.html')
+  return flask.render_template('index.html', items = dictionary)
 
 @app.route('/store/<item>')
 def lookup(item):
@@ -24,12 +24,6 @@ def lookup(item):
       definition = "item doesn't exist"
     )
   
-
-
-
-
-
-# @app.route('/def/<item>')
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000)
