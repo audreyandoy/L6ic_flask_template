@@ -1,0 +1,14 @@
+{% extends index.html %}
+
+{% block content %}
+    <select id="selection">
+        {% for item in items %}
+            <option value={{item}}>{{item}}</option>
+        {% endfor %}
+    </select>
+
+    <button onclick='window.location = "/store/" + $("#selection").val();'></button>
+
+
+
+{% endblock %}
